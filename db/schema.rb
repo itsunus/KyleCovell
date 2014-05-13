@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140511194607) do
+ActiveRecord::Schema.define(version: 20140513143508) do
 
   create_table "assignments", force: true do |t|
     t.integer  "user_id"
@@ -99,8 +99,8 @@ ActiveRecord::Schema.define(version: 20140511194607) do
     t.string   "number"
     t.integer  "customer_id"
     t.integer  "contact_id"
-    t.datetime "start_date"
-    t.datetime "end_date"
+    t.date     "start_date"
+    t.date     "end_date"
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"

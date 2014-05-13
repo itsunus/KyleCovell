@@ -33,8 +33,8 @@
               <td><%= user.office_phone %></td>
               <td><%= user.mobile_phone %></td>
               <td><%= user.email %></td>
-              <td><%= formated_date(user.created_at) %></td>
-              <td><%= formated_date(user.last_sign_in_at) %></td>
+              <td><%= formated_datetime(user.created_at) %></td>
+              <td><%= formated_datetime(user.last_sign_in_at) %></td>
               <td><%= link_to 'Show', users_admin_path(user) %></td>
               <td><%= link_to 'Edit', edit_users_admin_path(user) %></td>
               <td><%= link_to 'Destroy', users_admin_path(user), method: :delete, data: {confirm: 'Are you sure?'} %></td>

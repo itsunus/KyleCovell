@@ -25,8 +25,8 @@
               <td><%= project.number %></td>
               <td><%= project.customer.business_name %></td>
               <td><%= link_to_contact(project.contacts) %></td>
-              <td><%= project.start_date %></td>
-              <td><%= project.end_date %></td>
+              <td><%= formated_date(project.start_date) %></td>
+              <td><%= formated_date(project.end_date) %></td>
               <td><%= project.notes %></td>
               <td><%= link_to 'Show', project %></td>
               <td><%= link_to 'Edit', edit_project_path(project) %></td>

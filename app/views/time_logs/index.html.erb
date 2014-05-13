@@ -18,8 +18,8 @@
         <tbody>
         <% @time_logs.each do |time_log| %>
             <tr>
-              <td><%= formated_date(time_log.start_at) %></td>
-              <td><%= formated_date(time_log.end_at) %></td>
+              <td><%= formated_datetime(time_log.start_at) %></td>
+              <td><%= formated_datetime(time_log.end_at) %></td>
               <td><%= time_log.time_logged_str %></td>
               <td><%= time_log.user.name %></td>
               <td><%= time_log.project.name %></td>
